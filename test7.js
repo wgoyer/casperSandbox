@@ -17,7 +17,7 @@ casper.userAgent('Mozilla/5.0 (Macintosh; Intel Mac OS X)');
 var fs = require('fs');
 
 //Reading CSV file for story names
-var someStories = fs.read('stories.csv').split(',');
+var someStories = fs.read('stories.csv').split('|,|');
 for(i=0;i<someStories.length;i++){
   console.log(i+ " "+someStories[i]);
 }
