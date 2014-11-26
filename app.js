@@ -6,7 +6,7 @@ Array.prototype.randomElement = function(){
 };
 
 dbConnect = function(callback){
-  MongoClient.connect('mongodb://localhost:27017/rallyTestData', function(err, db){
+  MongoClient.connect('mongodb://bld-foosnet-01:27017/rallyTestData', function(err, db){
     if(err) return console.log(err);
     callback(db);
   });
